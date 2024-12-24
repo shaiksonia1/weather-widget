@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Component Development Notes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        code {
+            background: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Web Component Development Notes</h1>
+
+    <h2>Project Overview</h2>
+    <p>The project involves creating a reusable <code>&lt;city-weather&gt;</code> web component to display weather information for a given city. By default, the widget shows the weather for Los Angeles. A form allows users to input another city name, which updates the component dynamically. The widget is encapsulated in a JavaScript module and integrated into two pages to demonstrate reusability.</p>
+
+    <h2>Challenges Faced</h2>
+    <ul>
+        <li>Understanding the <code>Custom Elements</code> API and lifecycle callbacks such as <code>connectedCallback</code> and <code>attributeChangedCallback</code>.</li>
+        <li>Fetching live weather data from an API and handling edge cases such as invalid city names or network issues.</li>
+        <li>Dynamic attribute manipulation and ensuring updates reflect in the component seamlessly.</li>
+        <li>Modularizing the widget code into a reusable JavaScript module while ensuring compatibility across different pages.</li>
+    </ul>
+
+    <h2>Approach</h2>
+    <ol>
+        <li>Studied the <code>Custom Elements</code> API documentation to understand how to define and use web components.</li>
+        <li>Created a basic <code>&lt;city-weather&gt;</code> component with default behavior for Los Angeles.</li>
+        <li>Encapsulated styles using the shadow DOM to prevent conflicts with global CSS.</li>
+        <li>Integrated a form for user input and added an event listener to update the component's <code>city</code> attribute dynamically.</li>
+        <li>Fetched weather data using a free weather API, handling errors gracefully with fallback messages.</li>
+        <li>Packaged the widget code as a JavaScript module for reuse and imported it into two separate HTML pages.</li>
+    </ol>
+
+    <h2>Improvements</h2>
+    <ul>
+        <li>Optimize API requests by debouncing user input to avoid excessive calls.</li>
+        <li>Add unit tests for the web component to ensure robustness and prevent regressions.</li>
+        <li>Enhance the user interface with better styling and animations.</li>
+        <li>Cache weather data for frequently searched cities to improve performance.</li>
+        <li>Provide a fallback for browsers that do not support web components natively, using a polyfill.</li>
+    </ul>
+
+    <h2>Reflection</h2>
+    <p>This project highlighted the flexibility and power of web components for creating reusable, framework-agnostic UI elements. The modular approach significantly simplifies maintenance and integration across projects. Despite initial challenges, working with web components proved to be an efficient and rewarding experience.</p>
+
+    <div style="display: flex; gap: 4rem;" >
+        <img src="./image-1.png" alt="image-1" width="40%">
+        <img src="./image-2.png" alt="image-1" width="40%">
+    </div>
+    <h2 style="color: #2a7f62;">Chat Gpt Link</h2>
+    <a style="text-decoration: none; color: #555;" href="https://chatgpt.com/share/67687876-2a90-8005-a119-3b6f4ef22051" style="color: #2a7f62; font-size: 2rem;">Link for chatgpt</a>
+
+</body>
+</html>

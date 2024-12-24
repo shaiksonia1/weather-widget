@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather Widget - Page 2</title>
+  <script type="module" src="./src/components/WeatherWidget.js"></script>
+  <link rel="stylesheet" href="./src/styles/global.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      background: url('https://images.pexels.com/photos/1292115/pexels-photo-1292115.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      color: white;
+      background-color: #28a745;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #218838;
+    }
+
+    .logo {
+      width: 150px;
+      margin: 20px auto;
+    }
+  </style>
+</head>
+<body>
+  
+  <h1>Weather Widget - Page 2</h1>
+  
+  <city-weather city="San Francisco"></city-weather>
+
+  <!-- Navigation Button -->
+  <button onclick="navigateToPage1()">Go to Page 1</button>
+
+  <script>
+    function navigateToPage1() {
+      window.location.href = 'index.html';
+    }
+  </script>
+</body>
+</html>

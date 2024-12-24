@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather Widget - Page 1</title>
+  <link rel="stylesheet" href="./src/styles/global.css">
+  <script type="module" src="./src/components/WeatherWidget.js"></script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      background: url('https://images.pexels.com/photos/15045731/pexels-photo-15045731/free-photo-of-view-on-road-through-windows-in-raindrops.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      color: white;
+      background-color: #007bff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    .logo {
+      width: 150px;
+      margin: 20px auto;
+    }
+  </style>
+</head>
+<body>
+
+  
+  <h1>Weather Widget - Page 1</h1>
+  
+  <!-- Weather Widget -->
+  <city-weather city="Los Angeles"></city-weather>
+
+  <!-- Navigation Button -->
+  <button onclick="navigateToPage2()">Go to Page 2</button>
+
+  <script>
+    function navigateToPage2() {
+      window.location.href = 'page2.html';
+    }
+  </script>
+
+</body>
+</html>
